@@ -15,4 +15,8 @@ main = do
     then putStrLn "Passed"
     else error "Failed"
 
+  if flatten (List [List [Elem 2, List [Elem 3, Elem 4], Elem 5], Elem 6]) == [2,3,4,5,6]
+    then putStrLn "Passed"
+    else error "Failed"
+
   putStrLn "All passed"
