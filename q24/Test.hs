@@ -8,3 +8,7 @@ main = do
     gen <- getStdGen
 
     print $ diff_select 6 49 gen
+
+    gen2 <- getStdGen
+
+    print $ diff_select' 6 49 gen
